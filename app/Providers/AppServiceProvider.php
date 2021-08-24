@@ -24,5 +24,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->bind('App\Contracts\Services\RunnerServiceInterface', 'App\Services\RunnerService');
+        $this->app->bind('App\Contracts\Repositories\RunnerRepositoryInterface', 'App\Repositories\RunnerRepository');
     }
 }
